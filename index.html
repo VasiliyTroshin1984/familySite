@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Lobster & display = swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e8052e0e5.js" crossorigin="anonymous"></script>
+    <title>Сайт пробник</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a class="menu_url" href="">О сайте</a>
+            <a class="menu_url" href="/index.html">Обо мне</a>
+            <div class="qwerty">
+                <a class="menu_url parents" href="#">Мои родители</a>
+                <div class="parentsList hiddenNo">
+                    <ul class="parLs" >
+                        <li><a class="urlP" href="mother.html"> Моя мама</a></li>
+                        <li><a class="urlP" href="father.html">Мой папа</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="menu_url" href="">Мои фотки</a>
+
+        </div>
+        <div class="header_box">
+            <img class="scale" src="images/3.jpg" alt="">
+            <img class="scale" src="images/4.jpg" alt="">
+            <img class="scale" src="images/5.jpg" alt="">
+            <img class="scale" src="images/6.jpg" alt="">
+            <img class="scale" src="images/7.jpg" alt="">
+            <img class="scale"  src="images/8.jpg" alt="">
+            <img class="scale" src="images/9.jpg" alt="">
+        </div>
+    </header>
+    <div class="banner">
+        <div class="bancon">
+            <h2 class="bantxt">Давайте знакомиться</h2>
+            <button class="custom-btn btn-12"><span>Click!</span><span>Привет</span></button>
+        </div>
+         <div class="login-box">
+            <h2>Как тебя зовут?</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Имя</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Фамилия</label>
+              </div>
+              <a class="axx" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+        </div>
+        
+    </div>
+
+    
+    <footer></footer>
+    
+</body>
+<script>
+    function addForm(){
+        form.classList.add('hidden');
+    };
+
+     function removeForm(){
+        form.classList.remove('hidden');
+    };
+
+    function addParents(){
+        parentsList.classList.toggle('hiddenNo')
+    };
+    
+   
+    let urlParents=document.querySelector('.parents');
+    let parentsList=document.querySelector('.parentsList');
+    let btnEl=document.querySelector('.axx');
+    let form=document.querySelector('.login-box');
+    let btn=document.querySelector('button');
+    btn.addEventListener('click',addForm);
+    btnEl.addEventListener('click',removeForm);
+    urlParents.addEventListener('click',addParents);
+    </script>
+</html>
